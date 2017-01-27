@@ -1,0 +1,9 @@
+Pending Specs
+
+1. CRUD student
+2. edit records with ajax
+3. compute grade
+4. selecting records like subject/gradesection/quarter
+5. login/logout
+6. school details.
+7. search student
