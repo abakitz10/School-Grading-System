@@ -4,6 +4,7 @@
 	background-color: #000;
 	color : #fff;
 }
+.modal-content {border-radius: 0;}
 .modal {    
     width: 60%;
     margin: 0 auto;
@@ -57,6 +58,7 @@ section .content-panel table tbody tr:hover {cursor: pointer;background-color: #
 section .content-panel table tbody tr.row-active:hover {background-color: #000;}
 section .content-panel .search-student form {float: right;margin-bottom: 15px;}
 section .content-panel .search-student form input {padding: 3px 15px;}
+section .content-panel .table-student .student-btn {float: right;}
 section .content-panel {position: relative;}
 section .content-panel:before {
 	content: "";
@@ -87,6 +89,6 @@ section .content-panel:before {
 .table-records .written-works  tbody tr,
 .table-records .quarterly-assessment tbody tr {
 	background-color: #7db7b2;
-    color: #fff;
+    color: #753712;
     text-align: center;
 }

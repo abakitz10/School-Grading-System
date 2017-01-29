@@ -31,6 +31,12 @@
                             <select class="select-section">
                                 <option></option>
                                 <option>VI-ABAQUITA</option>
+                                <option>Grade 2</option>
+                                <option>Grade 3</option>
+                                <option>Grade 4</option>
+                                <option>Grade 5</option>
+                                <option>Grade 6</option>
+                                <option>Grade 7</option>
                             </select>
                         </td>
                         <td>Teacher:
@@ -57,195 +63,149 @@
     <section>
         <aside class="menu-panel">
                 <div class="table-records">
-        <div class="written-works">
-            <h4>Written Works</h4>
-            <table class="table table-stripped">
-                <thead>
-                    <tr>
-                        <th>1</th>
-                        <th>2</th>
-                        <th>3</th>
-                        <th>4</th>
-                        <th>5</th>
-                        <th>6</th>
-                        <th>7</th>
-                        <th>8</th>
-                        <th>9</th>
-                        <th>10</th>
-                        <th>Total</th>
-                        <th>PS</th>
-                        <th>WS</th>
-                    </tr>
-                    <tr>
-                        <th>25</th>
-                        <th>20</th>
-                        <th>25</th>
-                        <th>20</th>
-                        <th></th>
-                        <th></th>
-                        <th></th>
-                        <th></th>
-                        <th></th>
-                        <th></th>
-                        <th>90</th>
-                        <th>100.00</th>
-                        <th>30%</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <div class="performance-task">
-          <h4>Performance Task</h4>
-            <table class="table table-stripped">
-                <thead>
-                    <tr>
-                        <th>1</th>
-                        <th>2</th>
-                        <th>3</th>
-                        <th>4</th>
-                        <th>5</th>
-                        <th>6</th>
-                        <th>7</th>
-                        <th>8</th>
-                        <th>9</th>
-                        <th>10</th>
-                         <th>Total</th>
-                        <th>PS</th>
-                        <th>WS</th>
-                    </tr>
-                     <tr>
-                        <th>25</th>
-                        <th>20</th>
-                        <th>25</th>
-                        <th>20</th>
-                        <th></th>
-                        <th></th>
-                        <th></th>
-                        <th></th>
-                        <th></th>
-                        <th></th>
-                        <th>90</th>
-                        <th>100.00</th>
-                        <th>30%</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <div class="quarterly-assessment">
-          <h4>Quarterly Assessment</h4>
-            <table class="table table-stripped">
-                <thead>
-                    <tr>
-                        <th>1</th>
-                        <th>PS</th>
-                        <th>WS</th>
-                        <th>Initial</th>
-                        <th>Q.Grade</th>
-                    </tr>
-                     <tr>
-                        <th>25</th>
-                        <th>20</th>
-                        <th>25</th>
-                        <th>100.00</th>
-                        <th>30%</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
-         <!--    <ul>
-                <li><button class="btn btn-primary btn-lg">Quarterly Assessment (20%)</button></li>
-                <li><button class="btn btn-primary btn-lg">Written Works (30%)</button></li>
-                <li><button class="btn btn-primary btn-lg">Performance Tasks (50%)</button></li> 
-            </ul> -->
-           <!--  <h3>Percentage <a class="btn btn-danger btn-sm btn-percentage">change</a></h3>
-            <form class="form-inline">
-                <table>
-                    <tr>
-                        <td><label for="quarterly">Quarterly Assessment</label></td>
-                        <td>
-                            <div class="input-group">
-                                <input type="text" value="20" class="form-control quarter-input" disabled> 
-                                <div class="input-group-addon">%</div>
-                            </div>
-                        </td>
-                    </tr>
-                     <tr>
-                        <td><label for="quarterly">Written Works</label></td>
-                        <td>
-                            <div class="input-group">
-                                <input type="text" value="30" class="form-control written-input" disabled> 
-                                <div class="input-group-addon">%</div>
-                            </div>
-                        </td>
-                    </tr>
-                     <tr>
-                        <td><label for="quarterly">Performance Tasks</label></td>
-                        <td>
-                            <div class="input-group">
-                                <input type="text" value="50" class="form-control performance-input" disabled> 
-                                <div class="input-group-addon">%</div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>
-                            <button class="btn btn-default btn-update-percentage">Update</button>
-                        </td>
-                    </tr>
-                </table>  
-            </form> -->
+            <div class="written-works">
+                <h4>Written Works</h4>
+                <table class="table table-stripped">
+                    <thead>
+                        <tr>
+                            <th>1</th>
+                            <th>2</th>
+                            <th>3</th>
+                            <th>4</th>
+                            <th>5</th>
+                            <th>6</th>
+                            <th>7</th>
+                            <th>8</th>
+                            <th>9</th>
+                            <th>10</th>
+                            <th>Total</th>
+                            <th>PS</th>
+                            <th>WS</th>
+                        </tr>
+                        <tr>
+                            <th>25</th>
+                            <th>20</th>
+                            <th>25</th>
+                            <th>20</th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th>90</th>
+                            <th>100.00</th>
+                            <th>30%</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                    </tbody>
+                </table>
+                </div>
+                <div class="performance-task">
+                <h4>Performance Task</h4>
+                    <table class="table table-stripped">
+                        <thead>
+                            <tr>
+                                <th>1</th>
+                                <th>2</th>
+                                <th>3</th>
+                                <th>4</th>
+                                <th>5</th>
+                                <th>6</th>
+                                <th>7</th>
+                                <th>8</th>
+                                <th>9</th>
+                                <th>10</th>
+                                <th>Total</th>
+                                <th>PS</th>
+                                <th>WS</th>
+                            </tr>
+                            <tr>
+                                <th>25</th>
+                                <th>20</th>
+                                <th>25</th>
+                                <th>20</th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th>90</th>
+                                <th>100.00</th>
+                                <th>30%</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="quarterly-assessment">
+                <h4>Quarterly Assessment</h4>
+                    <table class="table table-stripped">
+                        <thead>
+                            <tr>
+                                <th>1</th>
+                                <th>PS</th>
+                                <th>WS</th>
+                                <th>Initial</th>
+                                <th>Q.Grade</th>
+                            </tr>
+                            <tr>
+                                <th>25</th>
+                                <th>20</th>
+                                <th>25</th>
+                                <th>100.00</th>
+                                <th>30%</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        
         </aside>
 
-        <div class="content-panel">
-           <!--  <div class="alert alert-warning alert-dismissible fade in" role="alert">
-              <button type="button" class="close" aria-label="Close"><span aria-hidden="true">×</span></button>
-              <strong>Ooopss!</strong> Please select student below.
-            </div> -->       
+        <div class="content-panel">  
             <div>
                 <button class="add-student btn btn-primary">Add Student</button>
             </div>
@@ -254,7 +214,7 @@
                     <input type="text" placeholder="Search student...">
                 </form>
             </div>   
-            <table class="table table-stripped">
+            <table class="table table-student table-stripped">
                 <thead>
                     <tr>
                         <th>#</th>
@@ -276,24 +236,23 @@
                         while($row = mysqli_fetch_assoc($result)) {
 
                             $stud_id = $row['id'];
-                           // $fullname = $row['last_name'] . ', ' . $row['first_name'] . ' '. $row['middle_name']; 
+                            $fullname = $row['last_name'] . ', ' . $row['first_name'] . ' '. $row['middle_name']; 
 
-                            // $written_works = new MyClass\WrittenWork();
-                            // $written_total = $written_works->getTotal( $stud_id );
-
-                            // $performance_tasks = new MyClass\PerformanceTask();
-                            // $performance_total = $performance_tasks->getTotal( $stud_id );
-
-                            // $quarterly_assessment = new MyClass\QuarterlyAssessment();
-                            // $quarterly_assessment_total = $quarterly_assessment->getTotal( $stud_id );
-
-                            // echo "<tr>";
-                            //     echo "<td>" . $row['id'] . "</td>";
-                            //     echo "<td>" . $row['last_name'] . "</td>";
-                            //     echo "<td>" . $row['first_name'] . "</td>";
-                            //     echo "<td>" . $row['middle_name'] . "</td>";
-                            //     echo "<td>" . '0'. "</td>";
-                            // echo "</tr>";
+                            echo "<tr>";
+                                echo "<td><span>" . $row['id'] . "</span>
+                                    <input type='text' name='gender' class='gender-hidden hidden' value='" . $row['gender'] . "'> 
+                                    <input type='text' name='section' class='section-hidden hidden' value='" . $row['grade_section'] . "'> 
+                                
+                                </td>";
+                                echo "<td><span>" . $row['last_name'] . "</span></td>";
+                                echo "<td><span>" . $row['first_name'] . "</span></td>";
+                                echo "<td><span>" . $row['middle_name'] .
+                                '</span><div class="student-btn hidden" style="float: right;">
+                                <button data-id=' . $row["id"] .'  type="button" class="btn btn-xs btn-primary">Edit</button> 
+                                | <button data-id=' . $row["id"] .' type="button" class="btn btn-xs btn-danger">Delete</button></div>'  . "</td>";
+                                 
+                               
+                            echo "</tr>";
                         }
                     }
                     ?>
@@ -341,7 +300,7 @@
                                 <label for="section">Section</label>
                                 <select class="form-control" id="section">
                                     <option></option>
-                                    <option>Grade 1</option>
+                                    <option>VI-ABAQUITA</option>
                                     <option>Grade 2</option>
                                     <option>Grade 3</option>
                                     <option>Grade 4</option>
@@ -351,15 +310,59 @@
                                 </select>   
                             </div>
                         </td>
-                        <td></td>
-                        <td></td>
+                        <td>
+                            <div class="radio">
+                              <label>
+                                <input type="radio" name="gender" id="male" value="M">
+                                Male
+                              </label>
+                            </div>
+                            
+                        </td>
+                        <td>
+                            <div class="radio">
+                              <label>
+                                <input type="radio" name="gender" id="female" value="F">
+                                Female
+                              </label>
+                            </div>
+                        </td>
                     </tr>
                 </table>
             </form>
           </div>
           <div class="modal-footer">
+            <div class="progress hidden">
+              <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+                <span>Please wait...</span>
+              </div>
+            </div>
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
             <button type="button" class="save-student btn btn-primary">Save Student</button>
+            <button type="button" class="update-student btn btn-primary">Update Student</button>
           </div>
         </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
+    </div>
+
+    <div class="modal fade" id="modal-confirm">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Confirm</h4>
+          </div>
+          <div class="modal-body">
+            <p>Are you sure to delete?</p>
+          </div>
+          <div class="modal-footer">
+            <div class="progress hidden">
+              <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+                <span>Please wait...</span>
+              </div>
+            </div>
+            <button type="button" class="btn btn-default" data-dismiss="modal">No</button>
+            <button type="button" class="btn btn-primary" id="delete-yes">Yes</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
