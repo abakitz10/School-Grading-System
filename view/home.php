@@ -212,6 +212,11 @@
             <div class="search-student">
                 <form>
                     <input type="text" placeholder="Search student...">
+                    <select class="form-control select-gender">
+                        <option>All</option>
+                        <option>Boys</option>
+                        <option>Girls</option>
+                    </select>
                 </form>
             </div>   
             <table class="table table-student table-stripped">

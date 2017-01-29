@@ -1,6 +1,6 @@
 Pending Specs
 
-1. CRUD student
+1. CRUD student - Done
 2. edit records with ajax
 3. compute grade
 4. selecting records like subject/gradesection/quarter

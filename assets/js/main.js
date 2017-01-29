@@ -167,7 +167,6 @@ $( document ).ready(function() {
 
 	});
 
-
 	$('.update-student').click(function() {
 
 		fname 	= $('.form-student #fname').val();
@@ -179,6 +178,38 @@ $( document ).ready(function() {
 		$( '#myModal .progress' ).removeClass('hidden');
 		updateStudent(st_id,fname,mname,lname,gender, section);
 
+	});
+
+	// sort table student
+	$('.select-gender').on('change', function() {
+
+		var txt = $(this).val();
+		$('.table-student tr').addClass('hidden');
+
+		if (txt == "Boys") {
+		
+			$('.table-student tr td .gender-hidden').each(function() {
+				
+				if ( $(this).val() == "M" ) {
+				
+					$( this ).closest('tr').removeClass('hidden');
+				} 
+			});
+
+		} else if (txt == "Girls") {
+
+			$('.table-student tr td .gender-hidden').each(function() {
+				
+				if ( $(this).val() == "F" ) {
+				
+					$( this ).closest('tr').removeClass('hidden');
+				} 
+			});
+			
+		} else {
+			$('.table-student tr').removeClass('hidden');
+		}
+	
 	});
 
 });
