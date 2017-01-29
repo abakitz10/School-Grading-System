@@ -63,10 +63,6 @@ $( document ).ready(function() {
 		$('.btn-update-percentage').show();
 		$('.quarter-input').focus();
 	});
-	$('.btn-update-percentage').click(function(e) {
-		//e.preventDefault();
-		//('.menu-panel form input').attr('disabled', 'disabled');
-	});
 
 	$('div.teacher-class table tr td select').on('change', function() {
 		
@@ -98,7 +94,6 @@ $( document ).ready(function() {
 	});
 
 	// add student
-
 	$('.save-student').click(function() {
 
 		var fname 	= $('.modal-body #fname').val(),
@@ -123,8 +118,7 @@ $( document ).ready(function() {
 	});
 
 
-	// delete student
-	
+	// delete student	
 	$( document ).on('click', '.table-student .btn-danger', function () {
 		
 		$('#modal-confirm').modal('show');
@@ -210,6 +204,31 @@ $( document ).ready(function() {
 			$('.table-student tr').removeClass('hidden');
 		}
 	
+	});
+
+	// search student 
+	$('.search-student form input').on('keyup', function() {
+
+		var str = $(this).val();
+
+		if (str.length > 2 ) {
+
+			$('.table-student tr td span').each(function() {
+				var txt	   = $( this ).text(),
+					txt    = txt.toLowerCase(),
+				    re     = new RegExp(txt, 'i'),
+				    result = txt.match(str);
+				
+				if (result) {
+					$('.table-student tr').addClass('hidden');
+					$( this ).closest('tr').removeClass('hidden');
+				}
+			});
+
+		} else {
+			$('.table-student tr').removeClass('hidden');
+		}
+		
 	});
 
 });

@@ -1,6 +1,5 @@
 /* global class */
 
-body {background: #f1f1f1;}
 .row-active {
 	background-color: #000;
 	color : #fff;
@@ -59,7 +58,7 @@ section .menu-panel h3 {
 section .content-panel table tbody tr:hover {cursor: pointer;background-color: #eee;}
 section .content-panel table tbody tr.row-active:hover {background-color: #000;}
 section .content-panel .add-student {float: right;}
-section .content-panel .select-gender {margin-top: 30px;background-color: #03628e; color: #fff;border-radius: 0;}
+section .content-panel .select-gender {margin-top: 30px;background-color: #03628e; color: #fff;border-radius: 0; border: 0;}
 section .content-panel .search-student form input {padding: 3px 15px;}
 section .content-panel .table-student .student-btn {float: right;}
 section .content-panel {position: relative;}
