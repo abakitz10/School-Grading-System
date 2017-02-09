@@ -21,14 +21,14 @@
             <div class="teacher-class">
                 <table>
                     <tr>
-                        <td>Quarter: 
-                            <select class="select-quarter" disabled>
-                                <option></option>
-                                <option>Second</option>
+                        <td>Teacher:
+                            <select class="select-teacher form-control">
+                                <!-- <option></option> -->
+                                <option>MARITES L. ABAQUITA</option>
                             </select>
-                        </td>
+                        </td>            
                         <td>Grade & Section:
-                            <select class="select-section">
+                            <select class="select-section form-control">
                                 <option></option>
                                 <option>VI-ABAQUITA</option>
                                 <option>Grade 2</option>
@@ -38,17 +38,17 @@
                                 <option>Grade 6</option>
                                 <option>Grade 7</option>
                             </select>
-                        </td>
-                        <td>Teacher:
-                            <select class="select-teacher">
-                                <!-- <option></option> -->
-                                <option>MARITES L. ABAQUITA</option>
-                            </select>
-                        </td>
+                        </td>              
                         <td>Subject:
-                             <select class="select-subject" disabled>
+                             <select class="select-subject form-control" disabled>
                                 <option></option>
                                 <option>FILIPINO</option>
+                            </select>
+                        </td>
+                        <td>Quarter: 
+                            <select class="select-quarter form-control" disabled>
+                                <option></option>
+                                <option>Second</option>
                             </select>
                         </td>
                     </tr>
@@ -237,29 +237,29 @@
 
                     $result = $student->getAll();
 
-                    if (mysqli_num_rows($result) != 0) {
-                        while($row = mysqli_fetch_assoc($result)) {
+                    // if (mysqli_num_rows($result) != 0) {
+                    //     while($row = mysqli_fetch_assoc($result)) {
 
-                            $stud_id = $row['id'];
-                            $fullname = $row['last_name'] . ', ' . $row['first_name'] . ' '. $row['middle_name']; 
+                    //         $stud_id = $row['id'];
+                    //         $fullname = $row['last_name'] . ', ' . $row['first_name'] . ' '. $row['middle_name']; 
 
-                            echo "<tr>";
-                                echo "<td><span>" . $row['id'] . "</span>
-                                    <input type='text' name='gender' class='gender-hidden hidden' value='" . $row['gender'] . "'> 
-                                    <input type='text' name='section' class='section-hidden hidden' value='" . $row['grade_section'] . "'> 
+                    //         echo "<tr>";
+                    //             echo "<td><span>" . $row['id'] . "</span>
+                    //                 <input type='text' name='gender' class='gender-hidden hidden' value='" . $row['gender'] . "'> 
+                    //                 <input type='text' name='section' class='section-hidden hidden' value='" . $row['grade_section'] . "'> 
                                 
-                                </td>";
-                                echo "<td><span>" . $row['last_name'] . "</span></td>";
-                                echo "<td><span>" . $row['first_name'] . "</span></td>";
-                                echo "<td><span>" . $row['middle_name'] .
-                                '</span><div class="student-btn hidden" style="float: right;">
-                                <button data-id=' . $row["id"] .'  type="button" class="btn btn-xs btn-primary">Edit</button> 
-                                | <button data-id=' . $row["id"] .' type="button" class="btn btn-xs btn-danger">Delete</button></div>'  . "</td>";
+                    //             </td>";
+                    //             echo "<td><span>" . $row['last_name'] . "</span></td>";
+                    //             echo "<td><span>" . $row['first_name'] . "</span></td>";
+                    //             echo "<td><span>" . $row['middle_name'] .
+                    //             '</span><div class="student-btn hidden" style="float: right;">
+                    //             <button data-id=' . $row["id"] .'  type="button" class="btn btn-xs btn-primary">Edit</button> 
+                    //             | <button data-id=' . $row["id"] .' type="button" class="btn btn-xs btn-danger">Delete</button></div>'  . "</td>";
                                  
                                
-                            echo "</tr>";
-                        }
-                    }
+                    //         echo "</tr>";
+                    //     }
+                   // }
                     ?>
                 </tbody>
             </table>

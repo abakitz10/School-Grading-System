@@ -24,9 +24,19 @@ $( document ).ready(function() {
 		
 		var stud_id = $( this ).children('td:eq(0)').text();	
 
-		if (st_id != stud_id) {
+		if (st_id != stud_id && 
+			$('.select-quarter').val() != "" && 
+			$('.select-section').val() != "" && 
+			$('.select-subject').val() != "" )  {
 			getWrittenWork(stud_id);
 			getPerformanceTask(stud_id);
+		} else if (
+			$('.select-quarter').val() != "" || 
+			$('.select-section').val() != "" || 
+			$('.select-subject').val() != "" ) {
+
+			$('.table-records table tr td').text('0');
+
 		}
 
 	});
@@ -55,27 +65,18 @@ $( document ).ready(function() {
 	});
 
 
-	// percentage update 
-
-	$('.btn-percentage').click(function() {
-		$('.menu-panel form input').removeAttr('disabled');
-		$(this).hide();
-		$('.btn-update-percentage').show();
-		$('.quarter-input').focus();
-	});
-
-	$('div.teacher-class table tr td select').on('change', function() {
+	// $('div.teacher-class table tr td select').on('change', function() {
 		
-		var quarter = $('.select-quarter').val(),
-		 	section = $('.select-section').val(),
-		 	//quarter = $('.select-teacher').val(),
-		 	subject = $('.select-subject').val();
+	// 	var quarter = $('.select-quarter').val(),
+	// 	 	section = $('.select-section').val(),
+	// 	 	//quarter = $('.select-teacher').val(),
+	// 	 	subject = $('.select-subject').val();
 
-		if (quarter != "" && section != "" && subject != "") {
-			alert('ok');
-		}
+	// 	if (quarter != "" && section != "" && subject != "") {
+	// 		alert('ok');
+	// 	}
 
-	});
+	// });
 
 	$('div.teacher-class table tr td select.select-section').on('change', function() {
 		var section = $(this).val();
@@ -178,11 +179,11 @@ $( document ).ready(function() {
 	$('.select-gender').on('change', function() {
 
 		var txt = $(this).val();
-		$('.table-student tr').addClass('hidden');
+		$('.table-student tbody tr').addClass('hidden');
 
 		if (txt == "Boys") {
 		
-			$('.table-student tr td .gender-hidden').each(function() {
+			$('.table-student tbody tr td .gender-hidden').each(function() {
 				
 				if ( $(this).val() == "M" ) {
 				
@@ -192,7 +193,7 @@ $( document ).ready(function() {
 
 		} else if (txt == "Girls") {
 
-			$('.table-student tr td .gender-hidden').each(function() {
+			$('.table-student tbody tr td .gender-hidden').each(function() {
 				
 				if ( $(this).val() == "F" ) {
 				
@@ -201,7 +202,7 @@ $( document ).ready(function() {
 			});
 			
 		} else {
-			$('.table-student tr').removeClass('hidden');
+			$('.table-student tbody tr').removeClass('hidden');
 		}
 	
 	});
@@ -213,22 +214,27 @@ $( document ).ready(function() {
 
 		if (str.length > 2 ) {
 
-			$('.table-student tr td span').each(function() {
+			$('.table-student tbody tr td span').each(function() {
 				var txt	   = $( this ).text(),
 					txt    = txt.toLowerCase(),
-				    re     = new RegExp(txt, 'i'),
+				    re     = new RegExp(txt, 'gi'),
 				    result = txt.match(str);
 				
 				if (result) {
-					$('.table-student tr').addClass('hidden');
+					$('.table-student tbody tr').addClass('hidden');
 					$( this ).closest('tr').removeClass('hidden');
 				}
 			});
 
 		} else {
-			$('.table-student tr').removeClass('hidden');
+			$('.table-student tbody tr').removeClass('hidden');
 		}
 		
+	});
+
+
+	$('.login-panel form .form-group button:eq(1)').click(function() {
+		$('.login-panel form:eq(1)').slideToggle();
 	});
 
 });

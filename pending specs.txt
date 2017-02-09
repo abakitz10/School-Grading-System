@@ -6,4 +6,5 @@ Pending Specs
 4. selecting records like subject/gradesection/quarter
 5. login/logout
 6. school details.
-7. search student
+7. search student - Done
+8. error style

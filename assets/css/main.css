@@ -1,11 +1,12 @@
 /* global class */
-
+body {font-family: monospace; }
 .row-active {
 	background-color: #000;
 	color : #fff;
 }
-.form-control, .btn {border-radius: 0;}
-.modal-content {border-radius: 0;}
+.form-control, .btn, .modal-content {border-radius: 0;}
+.modal-content {background-color: #eee;}
+.modal-backdrop.in {opacity: 0.9;}
 .modal {    
     width: 60%;
     margin: 0 auto;
@@ -16,26 +17,47 @@ table {margin-bottom: 0 !important;}
 hr {border: 1px solid #ccc;}
 
 header {
-	background-color: #03628e;
+	background-color: #347746;
 	text-align: center;
 	padding: 15px;
 	color: #fff;
+    position: relative;
+    padding-top: 90px;
 }
-header h1 {margin-top: 10px; color: #eee;}
+header h1 {
+    background: #fff;
+    padding: 15px;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: -7px;
+    font-size: 28px;
+    color: #000;
+}
 header table {width: 100%;}
-header .teacher-class table tr td {padding: 5px 15px;}
-header .teacher-class table {background-color: #7db7b2;}
+header .teacher-class table tr td {padding: 20px 15px;}
+header .teacher-class table {background-color: #fbfbfb; border: 1px solid #ccc;}
 header table td {text-align: left;}
 header div.school-info {
-	background: #07567d;
+	background: #fff;
 	color: #000;
 	padding: 15px;
 }
 header div.school-info > table {background-color: #fff;}
 header div.school-info > table tr td {width: 50%;}
 header div.school-info table tr td span {font-weight: bold;}
-section .content-panel,
-section .menu-panel {width: 50%;}
+
+/* home page */
+section .menu-panel {
+    width: 50%;
+}
+section .content-panel {width: 50%;}
+section .content-panel {
+   overflow-y: auto;
+   overflow-x: hidden;
+   max-height: 585px;
+   background-color: #fbfbfb;
+}
 section .content-panel > div.alert {display: none;}
 section .menu-panel form .input-group input {text-align: center;}
 section .menu-panel form .btn-update-percentage {display: none;}
@@ -46,10 +68,10 @@ section .menu-panel ul li button {width: 100%; border-radius: 0;}
 section .menu-panel,
 section .content-panel {padding: 15px;float: left;}
 section .menu-panel {
-	background: #03628e;
+	background: #347746;
     color: #fff;
     padding-left: 15px;
-    padding-bottom: 70px;
+    padding-top: 0;
 }
 section .menu-panel h3 {
     margin-top: 0;
@@ -75,22 +97,79 @@ section .content-panel:before {
     border-top: 10px solid #03628e;
     border-bottom: 10px solid transparent;
     border-right: 10px solid transparent;
+    display: none;
 }
 .modal-body h3 {color: gray;}
 .modal-body h3 span {color: #000;}
 .table th {text-align: center;}
 .table-records {clear: both;}
-.table-records h4 {text-align: center;}
+.table-records h4 {text-align: center; color: #000;}
 .table-records .performance-task,
 .table-records .written-works,
-.table-records .quarterly-assessment {width: 100%;}
+.table-records .quarterly-assessment {
+    width: 100%;
+    padding: 15px;
+    background-color: #fff;
+    margin-bottom: 15px;
+    color: #ccc;
+    position: relative;
+}
+.table-records .quarterly-assessment {margin-bottom: 0;}
+/*.table-records .written-works:before,
+.table-records .performance-task:before,
+.table-records .quarterly-assessment:before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 20px;
+    background: #fff;
+    top: -16px;
+}
+*/
+.table-records .written-works:before {left: 0;}
+.table-records .performance-task:before {right: 0;}
+.table-records .quarterly-assessment:before {left: 0;}
+
 .table-records .performance-task thead tr:last-child,
 .table-records .written-works thead tr:last-child,
 .table-records .quarterly-assessment thead tr:last-child  {color: #31314e;}
 .table-records .performance-task tbody tr,
 .table-records .written-works  tbody tr,
 .table-records .quarterly-assessment tbody tr {
-	background-color: #7db7b2;
-    color: #753712;
+    background-color: #000;
+    color: #fff;
     text-align: center;
 }
+/* end of home page */
+
+/* login page */
+header.login-header {
+    background-color: #03628e;
+    text-align: center;
+    padding: 15px;
+    color: #fff;
+    position: absolute;
+    width: 100%;
+    height: 50vh;
+    z-index: -1;
+}
+.login-panel {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.login-panel form {
+    width: 600px; 
+    padding: 10px 30px;     
+    margin: 0 auto;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+.login-panel form h1 {
+    margin: 20px 0;
+    padding: 10px;
+    text-align: center;
+}
+.login-panel form:first-child .form-group button:last-child {float: right;}
+.login-panel form:last-child {display: none;}
+/* end of login page */
