@@ -8,27 +8,27 @@
 			data: {id: stud_id},
 			success: function(data) {
 				if (data != null) {
-					$('.written-works table tbody tr td:eq(0)').text(data['written_1']);
-					$('.written-works table tbody tr td:eq(1)').text(data['written_2']);
-					$('.written-works table tbody tr td:eq(2)').text(data['written_3']);
-					$('.written-works table tbody tr td:eq(3)').text(data['written_4']);
-					$('.written-works table tbody tr td:eq(4)').text(data['written_5']);
-					$('.written-works table tbody tr td:eq(5)').text(data['written_6']);
-					$('.written-works table tbody tr td:eq(6)').text(data['written_7']);
-					$('.written-works table tbody tr td:eq(7)').text(data['written_8']);
-					$('.written-works table tbody tr td:eq(8)').text(data['written_9']);
-					$('.written-works table tbody tr td:eq(9)').text(data['written_10']);
+					$('.written-works table tbody tr td:eq(0) input').val(data['written_1']);
+					$('.written-works table tbody tr td:eq(1) input').val(data['written_2']);
+					$('.written-works table tbody tr td:eq(2) input').val(data['written_3']);
+					$('.written-works table tbody tr td:eq(3) input').val(data['written_4']);
+					$('.written-works table tbody tr td:eq(4) input').val(data['written_5']);
+					$('.written-works table tbody tr td:eq(5) input').val(data['written_6']);
+					$('.written-works table tbody tr td:eq(6) input').val(data['written_7']);
+					$('.written-works table tbody tr td:eq(7) input').val(data['written_8']);
+					$('.written-works table tbody tr td:eq(8) input').val(data['written_9']);
+					$('.written-works table tbody tr td:eq(9) input').val(data['written_10']);
 				} else {
-					$('.written-works table tbody tr td:eq(0)').text('0');
-					$('.written-works table tbody tr td:eq(1)').text('0');
-					$('.written-works table tbody tr td:eq(2)').text('0');
-					$('.written-works table tbody tr td:eq(3)').text('0');
-					$('.written-works table tbody tr td:eq(4)').text('0');
-					$('.written-works table tbody tr td:eq(5)').text('0');
-					$('.written-works table tbody tr td:eq(6)').text('0');
-					$('.written-works table tbody tr td:eq(7)').text('0');
-					$('.written-works table tbody tr td:eq(8)').text('0');
-					$('.written-works table tbody tr td:eq(9)').text('0');
+					$('.written-works table tbody tr td:eq(0) input').val('0');
+					$('.written-works table tbody tr td:eq(1) input').val('0');
+					$('.written-works table tbody tr td:eq(2) input').val('0');
+					$('.written-works table tbody tr td:eq(3) input').val('0');
+					$('.written-works table tbody tr td:eq(4) input').val('0');
+					$('.written-works table tbody tr td:eq(5) input').val('0');
+					$('.written-works table tbody tr td:eq(6) input').val('0');
+					$('.written-works table tbody tr td:eq(7) input').val('0');
+					$('.written-works table tbody tr td:eq(8) input').val('0');
+					$('.written-works table tbody tr td:eq(9) input').val('0');
 				}
 			}
 		});
@@ -46,27 +46,27 @@
 			success: function(data) {
 				//console.log(data);
 				if (data != null) {
-					$('.performance-task table tbody tr td:eq(0)').text(data['p_1']);
-					$('.performance-task table tbody tr td:eq(1)').text(data['p_2']);
-					$('.performance-task table tbody tr td:eq(2)').text(data['p_3']);
-					$('.performance-task table tbody tr td:eq(3)').text(data['p_4']);
-					$('.performance-task table tbody tr td:eq(4)').text(data['p_5']);
-					$('.performance-task table tbody tr td:eq(5)').text(data['p_6']);
-					$('.performance-task table tbody tr td:eq(6)').text(data['p_7']);
-					$('.performance-task table tbody tr td:eq(7)').text(data['p_8']);
-					$('.performance-task table tbody tr td:eq(8)').text(data['p_9']);
-					$('.performance-task table tbody tr td:eq(9)').text(data['p_10']);
+					$('.performance-task table tbody tr td:eq(0) input').val(data['p_1']);
+					$('.performance-task table tbody tr td:eq(1) input').val(data['p_2']);
+					$('.performance-task table tbody tr td:eq(2) input').val(data['p_3']);
+					$('.performance-task table tbody tr td:eq(3) input').val(data['p_4']);
+					$('.performance-task table tbody tr td:eq(4) input').val(data['p_5']);
+					$('.performance-task table tbody tr td:eq(5) input').val(data['p_6']);
+					$('.performance-task table tbody tr td:eq(6) input').val(data['p_7']);
+					$('.performance-task table tbody tr td:eq(7) input').val(data['p_8']);
+					$('.performance-task table tbody tr td:eq(8) input').val(data['p_9']);
+					$('.performance-task table tbody tr td:eq(9) input').val(data['p_10']);
 				} else {
-					$('.performance-task table tbody tr td:eq(0)').text('0');
-					$('.performance-task table tbody tr td:eq(1)').text('0');
-					$('.performance-task table tbody tr td:eq(2)').text('0');
-					$('.performance-task table tbody tr td:eq(3)').text('0');
-					$('.performance-task table tbody tr td:eq(4)').text('0');
-					$('.performance-task table tbody tr td:eq(5)').text('0');
-					$('.performance-task table tbody tr td:eq(6)').text('0');
-					$('.performance-task table tbody tr td:eq(7)').text('0');
-					$('.performance-task table tbody tr td:eq(8)').text('0');
-					$('.performance-task table tbody tr td:eq(9)').text('0');
+					$('.performance-task table tbody tr td:eq(0) input').val('0');
+					$('.performance-task table tbody tr td:eq(1) input').val('0');
+					$('.performance-task table tbody tr td:eq(2) input').val('0');
+					$('.performance-task table tbody tr td:eq(3) input').val('0');
+					$('.performance-task table tbody tr td:eq(4) input').val('0');
+					$('.performance-task table tbody tr td:eq(5) input').val('0');
+					$('.performance-task table tbody tr td:eq(6) input').val('0');
+					$('.performance-task table tbody tr td:eq(7) input').val('0');
+					$('.performance-task table tbody tr td:eq(8) input').val('0');
+					$('.performance-task table tbody tr td:eq(9) input').val('0');
 					
 				}
 			}
@@ -207,3 +207,14 @@
 		});
 
 	}
+
+	function notificationMesage(message) {
+
+		$('body .ba-notification').remove();
+
+		var html = '<div class="ba-notification">' ;
+		html += message + '</div>';
+
+		$('body').prepend(html);
+	} 		
+	

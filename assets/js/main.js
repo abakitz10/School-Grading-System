@@ -35,7 +35,7 @@ $( document ).ready(function() {
 			$('.select-section').val() != "" || 
 			$('.select-subject').val() != "" ) {
 
-			$('.table-records table tr td').text('0');
+			$('.table-records table tr td input').val('0');
 
 		}
 
@@ -63,20 +63,6 @@ $( document ).ready(function() {
 	$('.content-panel > div.alert > .close').click(function() {
 		$('.content-panel > div.alert').slideToggle();
 	});
-
-
-	// $('div.teacher-class table tr td select').on('change', function() {
-		
-	// 	var quarter = $('.select-quarter').val(),
-	// 	 	section = $('.select-section').val(),
-	// 	 	//quarter = $('.select-teacher').val(),
-	// 	 	subject = $('.select-subject').val();
-
-	// 	if (quarter != "" && section != "" && subject != "") {
-	// 		alert('ok');
-	// 	}
-
-	// });
 
 	$('div.teacher-class table tr td select.select-section').on('change', function() {
 		var section = $(this).val();
@@ -234,7 +220,64 @@ $( document ).ready(function() {
 
 
 	$('.login-panel form .form-group button:eq(1)').click(function() {
-		$('.login-panel form:eq(1)').slideToggle();
+		$('.login-panel form:eq(0)').hide();
+		$('.login-panel form:eq(1)').slideToggle('slow');
+	});
+	$('.login-panel form.form-register > a').click(function() {
+		$('.login-panel form:eq(0)').slideToggle();
+		$('.login-panel form:eq(1)').hide();
+	});
+
+	$('button.btn-register').click(function(e) {
+
+		e.preventDefault();
+
+		var emailExist = 0;
+
+		
+
+		if ( $('#password-2').val() != $('#password-1').val() ) {
+			notificationMesage("Password not match!");
+		} else {
+			$.ajax({
+				url : 'model/ajax/checkEmail.php',
+				data : {
+					email : $('#email').val()
+				},
+				type : 'post',
+				success : function(data) {
+					if (data) {
+						notificationMesage("Email already exist");
+					} else {
+						$('.form-register').submit();
+					}
+				}
+			});
+		}
+
+	});
+
+	// toggle menu
+	$('header .slide-menu .glyphicon.glyphicon-menu-hamburger').click(function() {
+		$(this).hide();
+		$('header .slide-menu .menus').slideDown();
+	});
+	$('header .slide-menu .glyphicon.glyphicon-remove').click(function() {
+		$('header .slide-menu .menus').slideUp();
+		$('header .slide-menu .glyphicon.glyphicon-menu-hamburger').show('slow');
+	});
+
+	// add section
+	$('.btn-section').click(function() {
+		$('.add-new-section').slideDown();
+	});
+	$('.btn.save-section').click(function(e) {
+
+		console.log('ok');
+	});
+
+	$('header .slide-menu .menu-list > ul > li:nth-child(2)').click(function() {
+		alert('ok');
 	});
 
 });

@@ -1,32 +1,121 @@
-<body class="container">
+<?php 
+// session_start();
+
+// if ( !isset( $_SESSION['logged-in'] ) ) {
+//     die("<br>Please login first. <a href='index.php'>Click here to login...</a>");
+// } else {
+//     $user_id = $_SESSION['user_account']['user_id'];    
+//     $fname   = $_SESSION['user_account']['fname'];    
+//     $mname   = $_SESSION['user_account']['mname'];    
+//     $lname   = $_SESSION['user_account']['lname'];    
+//     $gender  = $_SESSION['user_account']['gender'];    
+//     $email   = $_SESSION['user_account']['email'];    
+// }
+
+?>
+    <?php include_once('header.php'); ?>
+<body class="container-fluid" style="margin-top: 20px;">
     <!-- Header -->
     <header>
-        <h1>Class Record</h1>
+        <div class="slide-menu">
+            
+            <div class="menus">
+                <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                <div class="menu-list">
+                    <ul>
+                        <li class="menu-active">Create Class</li>
+                        <li><a href="#">Add School</a></li>
+                    </ul>
+                </div>
+                <div class="menu-content">
+                    <div class="class-form">
+                        <div class="panel panel-success">
+                          <div class="panel-heading">
+                            <h3 class="panel-title">Create new class</h3>
+                          </div>
+                          <div class="panel-body">
+                             <form class="form">
+
+                            <table class="table">
+                                <tr>
+                                    <td><label>School</label></td>
+                                    <td>
+                                       
+                                        <select class="form-control">
+                                            <option>Bulacao Elementary School</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><label>Level</label></td>
+                                    <td>
+                                        <select class="form-control">
+                                            <option>Grade 1</option>
+                                            <option>Grade 2</option>
+                                            <option>Grade 3</option>
+                                            <option>Grade 4</option>
+                                            <option>Grade 5</option>
+                                            <option>Grade 6</option>
+                                            <option>Grade 7</option>
+                                            <option>Grade 8</option>
+                                            <option>Grade 9</option>
+                                            <option>Grade 10</option>
+                                            <option>Grade 11</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                           
+                                <tr>
+                                    <td><label>Section</label></td>
+                                    <td>
+                                        <select class="form-control">
+                                            <option>A</option>
+                                            <option>B</option>
+                                            <option>C</option>
+                                            <option>D</option>
+                                        </select>
+                                        <a class="btn-link btn-sm btn-section" href="#">Add new section</a>
+                                        <div class="add-new-section">
+                                            <input class="form-control" type="text" placeholder="Add new section">
+                                            <br>
+                                            <button class="btn btn-primary save-section">Save</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td><button class="btn btn-primary">Create Class</button></td>
+                                </tr>
+                            </table>
+                          
+                            
+                        </form>
+                          </div>
+                        </div>
+                       
+                    </div>
+                </div>
+                
+            </div>
+
+            <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+        </div>
+        <nav>
+            <ul>
+                <li>My Class Record</li>
+
+            </ul>
+        </nav>
         <div class="school-info">
-            <table class="table table-bordered">
-                <tr>
-                    <td>School name: <span>BULACAO ELEMENTARY SCHOOL</span></td>
-                    <td>Region: <span>VII</span></td>
-                </tr>
-                <tr>
-                    <td>School Id: <span>119794</span></td>
-                    <td>Division: <span>TALISAY CITY</span></td>
-                </tr>
-                <tr>
-                    <td>School Year: <span>2016-2017</span></td>
-                    <td>District: <span>TALISAY II</span></td>
-                </tr>
-            </table>
-            <hr>
+    
             <div class="teacher-class">
                 <table>
                     <tr>
-                        <td>Teacher:
-                            <select class="select-teacher form-control">
-                                <!-- <option></option> -->
-                                <option>MARITES L. ABAQUITA</option>
+                     <!--    <td>Teacher:
+                            <select class="select-teacher form-control" disabled>
+                                <option><?php echo $fname . ' ' . $mname . ' ' . $lname; ?></option>
                             </select>
-                        </td>            
+                        </td>   -->          
                         <td>Grade & Section:
                             <select class="select-section form-control">
                                 <option></option>
@@ -100,19 +189,19 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
+                            <td><input type="text" value="0"></td>
+                            <td><input type="text" value="0"></td>
+                            <td><input type="text" value="0"></td>
+                            <td><input type="text" value="0"></td>
+                            <td><input type="text" value="0"></td>
+                            <td><input type="text" value="0"></td>
+                            <td><input type="text" value="0"></td>
+                            <td><input type="text" value="0"></td>
+                            <td><input type="text" value="0"></td>
+                            <td><input type="text" value="0"></td>
+                            <td><input type="text" value="0"></td>
+                            <td><input type="text" value="0"></td>
+                            <td><input type="text" value="0"></td>
                         </tr>
                     </tbody>
                 </table>
@@ -371,3 +460,4 @@
         </div><!-- /.modal-content -->
       </div><!-- /.modal-dialog -->
     </div><!-- /.modal -->
+<?php include_once('footer.php'); ?>
